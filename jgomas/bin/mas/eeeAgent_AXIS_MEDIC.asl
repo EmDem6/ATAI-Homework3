@@ -317,7 +317,10 @@ patrollingRadius(64).
     <-
         .println("RECIDBIDO: ", X, " ", Y, " ", Z);
         if (aimed("false")){
-            update_destination(pos(X,Y,Z));
+            //update_destination(pos(X,Y,Z));
+            !add_task(task("TASK_GOTO_POSITION", A, pos(X,Y,Z), ""));
+            -+state(standing);
+            -goto(_,_,_);
         }
     .
 
@@ -327,9 +330,9 @@ patrollingRadius(64).
 
 +!init
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}
-   .my_name(MyName);
+   //.my_name(MyName);
 
-   ?objective(ObjectiveX, ObjectiveY, ObjectiveZ);
-   !add_task(task("TASK_GOTO_POSITION", MyName, pos(ObjectiveX, ObjectiveY, ObjectiveZ), ""));
+   //?objective(ObjectiveX, ObjectiveY, ObjectiveZ);
+   //!add_task(task("TASK_GOTO_POSITION", MyName, pos(ObjectiveX, ObjectiveY, ObjectiveZ), ""));
    .  
 
