@@ -132,7 +132,7 @@ patrollingRadius(64).
         
             .nth(6, AimedAgent, NewDestination);
             ?debug(Mode); if (Mode<=1) { .println("NUEVO DESTINO MARCADO: ", NewDestination); }
-            //update_destination(NewDestination);
+            update_destination(NewDestination);
         }
         .
     
@@ -203,7 +203,10 @@ patrollingRadius(64).
  *
  */
 +!update_targets 
-	<-	?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR UPDATE_TARGETS GOES HERE.") }.
+	<-	?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR UPDATE_TARGETS GOES HERE.") }
+    
+    .println("MEDIC TARGET REACHED.")
+    .
 	
 	
 /////////////////////////////////
@@ -313,6 +316,9 @@ patrollingRadius(64).
 +goto(X,Y,Z)[source(A)]
     <-
         .println("RECIDBIDO: ", X, " ", Y, " ", Z);
+        if (aimed("false")){
+            update_destination(pos(X,Y,Z));
+        }
     .
 
 /////////////////////////////////
@@ -320,5 +326,10 @@ patrollingRadius(64).
 /////////////////////////////////
 
 +!init
-   <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}.  
+   <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}
+   .my_name(MyName);
+
+   ?objective(ObjectiveX, ObjectiveY, ObjectiveZ);
+   !add_task(task("TASK_GOTO_POSITION", MyName, pos(ObjectiveX, ObjectiveY, ObjectiveZ), ""));
+   .  
 

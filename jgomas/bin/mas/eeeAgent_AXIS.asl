@@ -153,7 +153,7 @@ patrollingRadius(64).
         
             .nth(6, AimedAgent, NewDestination);
             ?debug(Mode); if (Mode<=1) { .println("NUEVO DESTINO MARCADO: ", NewDestination); }
-            //update_destination(NewDestination);
+            update_destination(NewDestination);
         }
         .
     
@@ -356,7 +356,7 @@ patrollingRadius(64).
 +!init
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}
 
-    +timer(10);
+    +timer(9);
 
 
     .my_name(MyName);
