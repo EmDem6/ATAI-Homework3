@@ -1,5 +1,5 @@
 Winner Team: ALLIED
-Duration: [4m:9s]
+Duration: [4m:12s]
 
 Statistics for ALLIED TEAM
 	-GENERAL:
@@ -41,7 +41,7 @@ Statistics for ALLIED TEAM
 
 Statistics for AXIS TEAM
 	-GENERAL:
-		* Alive:       	1
+		* Alive:       	2
 		* Avrg. Health:	100.0
 
 	-OBJECTIVE:

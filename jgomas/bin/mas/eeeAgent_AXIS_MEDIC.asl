@@ -6,7 +6,7 @@ manager("Manager").
 // Team of troop.
 team("AXIS").
 // Type of troop.
-type("CLASS_SOLDIER").
+type("CLASS_MEDIC").
 
 // Value of "closeness" to the Flag, when patrolling in defense
 patrollingRadius(64).
@@ -27,8 +27,8 @@ patrollingRadius(64).
 *******************************/
 
 /////////////////////////////////
-//  GET AGENT TO AIM
-/////////////////////////////////
+//  GET AGENT TO AIM 
+/////////////////////////////////  
 /**
  * Calculates if there is an enemy at sight.
  *
@@ -38,7 +38,7 @@ patrollingRadius(64).
  * enemy found. Otherwise, the return value is aimed("false")
  *
  * <em> It's very useful to overload this plan. </em>
- * 
+ *
  */
 +!get_agent_to_aim
     <-  ?debug(Mode); if (Mode<=2) { .println("Looking for agents to aim."); }
@@ -46,25 +46,6 @@ patrollingRadius(64).
         .length(FOVObjects, Length);
         
         ?debug(Mode); if (Mode<=1) { .println("El numero de objetos es:", Length); }
-
-        ?timer(T);
-
-        .println("TIMER VALUE: ", T);
-
-        if (T == 10){
-
-            ?my_position(X, Y, Z);
-            .my_team("medic_AXIS", E);
-            .concat("goto(",X, ", ", Y, ", ", Z, ")", Content);
-
-            .println("Sending message to the medic");
-            .send_msg_with_conversation_id(E, tell, Content, "INT");
-            -+timer(0);
-        } else {
-            -+timer(T + 1);
-        }
-
-        
         
         if (Length > 0) {
 		    +bucle(0);
@@ -103,7 +84,6 @@ patrollingRadius(64).
                 
             }
                      
-       
         }
 
      -bucle(_).
@@ -136,9 +116,8 @@ patrollingRadius(64).
  * is aiming.
  *
  *  It's very useful to overload this plan.
- * 
+ *
  */
-
 +!perform_aim_action
     <-  // Aimed agents have the following format:
         // [#, TEAM, TYPE, ANGLE, DISTANCE, HEALTH, POSITION ]
@@ -224,28 +203,7 @@ patrollingRadius(64).
  *
  */
 +!update_targets 
-	<-	?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR UPDATE_TARGETS GOES HERE.") }
-
-    .println("TARGET REACHED. UPDATING RANDOM POINT.");
-    
-    .my_name(MyName);
-    +newPos(0,0);
-    +position(invalid);
-    while (position(invalid)) {
-        -position(invalid);
-        .random(X);
-        .random(Z);
-        NewObjectiveX = X * 255;
-        NewObjectiveZ = Z * 255;
-        check_position(pos(NewObjectiveX, 0, NewObjectiveZ));
-        -+newPos(NewObjectiveX, NewObjectiveZ);
-    }
-    ?newPos(NewObjectiveX,NewObjectiveZ);
-
-    .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
-    !add_task(task("TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
-    
-    .
+	<-	?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR UPDATE_TARGETS GOES HERE.") }.
 	
 	
 /////////////////////////////////
@@ -278,6 +236,7 @@ patrollingRadius(64).
 +!checkAmmoAction
 <-  -+fieldopsAction(on).
 //  go to help
+
 
 
 
@@ -314,7 +273,7 @@ patrollingRadius(64).
        ?my_health_threshold(Ht);
        ?my_health(Hr);
        
-       if (Hr <= Ht) {  
+       if (Hr <= Ht) { 
           ?my_position(X, Y, Z);
           
          .my_team("medic_AXIS", E2);
@@ -329,7 +288,7 @@ patrollingRadius(64).
 //  ANSWER_ACTION_CFM_OR_CFA
 /////////////////////////////////
 
-   
+
     
 +cfm_agree[source(M)]
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR cfm_agree GOES HERE.")};
@@ -347,34 +306,19 @@ patrollingRadius(64).
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR cfa_refuse GOES HERE.")};
       -cfa_refuse.  
 
+/////////////////////////////////
+//  ANSWER_ACTION_INT
+/////////////////////////////////
 
++goto(X,Y,Z)[source(A)]
+    <-
+        .println("RECIDBIDO: ", X, " ", Y, " ", Z);
+    .
 
 /////////////////////////////////
 //  Initialize variables
 /////////////////////////////////
 
 +!init
-   <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}
-
-    +timer(10);
-
-
-    .my_name(MyName);
-    +newPos(0,0);
-    +position(invalid);
-    while (position(invalid)) {
-        -position(invalid);
-        .random(X);
-        .random(Z);
-        NewObjectiveX = X * 255;
-        NewObjectiveZ = Z * 255;
-        check_position(pos(NewObjectiveX, 0, NewObjectiveZ));
-        -+newPos(NewObjectiveX, NewObjectiveZ);
-    }
-    ?newPos(NewObjectiveX,NewObjectiveZ);
-
-    .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
-    !add_task(task("TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
-   
-   .  
+   <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}.  
 
