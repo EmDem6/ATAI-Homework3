@@ -205,7 +205,28 @@ patrollingRadius(64).
  *
  */
 +!update_targets 
-	<-	?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR UPDATE_TARGETS GOES HERE.") }.
+	<-	?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR UPDATE_TARGETS GOES HERE.") }
+
+    .println("TARGET REACHED. UPDATING RANDOM POINT.");
+    
+    .my_name(MyName);
+    +newPos(0,0);
+    +position(invalid);
+    while (position(invalid)) {
+        -position(invalid);
+        .random(X);
+        .random(Z);
+        NewObjectiveX = X * 255;
+        NewObjectiveZ = Z * 255;
+        check_position(pos(NewObjectiveX, 0, NewObjectiveZ));
+        -+newPos(NewObjectiveX, NewObjectiveZ);
+    }
+    ?newPos(NewObjectiveX,NewObjectiveZ);
+
+    .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
+    !add_task(task("TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
+    
+    .
 	
 	
 /////////////////////////////////
@@ -330,7 +351,7 @@ patrollingRadius(64).
     ?newPos(NewObjectiveX,NewObjectiveZ);
 
     .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
-    !add_task(task(1000, "TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
+    !add_task(task("TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
    
    .  
 
