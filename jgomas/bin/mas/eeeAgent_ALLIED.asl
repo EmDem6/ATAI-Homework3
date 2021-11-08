@@ -127,11 +127,19 @@ if (Length > 0) {
         ?debug(Mode); if (Mode<=2) { .println("BAJO EL PUNTO DE MIRA TENGO A ALGUIEN DEL EQUIPO ", AimedAgentTeam);             }
         ?my_formattedTeam(MyTeam);
 
-
+        .print("No se si llega aqui 2");
         if (AimedAgentTeam == 200) {
     
                 .nth(6, AimedAgent, NewDestination);
                 ?debug(Mode); if (Mode<=1) { .println("NUEVO DESTINO DEBERIA SER: ", NewDestination); }
+                update_destination(NewDestination);
+
+                ?my_position(X, Y, Z);
+                .my_team("AXIS", E);
+                .my_team("ALLIED", A);
+                .concat("goto2(",X, ", ", Y, ", ", Z, ")", Content);
+                .send_msg_with_conversation_id(E, tell, Content, "INT");
+                .send_msg_with_conversation_id(A, tell, Content, "INT");
           
             }
  .
@@ -332,7 +340,25 @@ if (Length > 0) {
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR cfa_refuse GOES HERE.")};
       -cfa_refuse.  
 
+/////////////////////////////////
+//  ANSWER_ACTION_INT
+/////////////////////////////////
 
++goto(X,Y,Z)[source(A)]
+    <-
+        //.println("RECIDBIDO: ", X, " ", Y, " ", Z);
+        .my_name(MyName);
+        !distance(pos(X,Y,Z));
+        ?distance(D);
+        if (D>7) 
+        {
+            ?current_task(task(C_priority, _, _, _, _));
+            !add_task(task(C_priority + 1,"TASK_GOTO_POSITION", MyName, pos(X, Y, Z), ""));
+	        -+state(standing);
+	        -goto(_,_,_)
+        }
+
+    .
 
 /////////////////////////////////
 //  Initialize variables

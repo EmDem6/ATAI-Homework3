@@ -46,7 +46,8 @@ patrollingRadius(64).
         .length(FOVObjects, Length);
         
         ?debug(Mode); if (Mode<=1) { .println("El numero de objetos es:", Length); }
-        /*
+        .println("El numero de objetos es:", Length);
+        
         if (Length > 0) {
 		    +bucle(0);
     
@@ -71,7 +72,7 @@ patrollingRadius(64).
                     ?my_formattedTeam(MyTeam);
           
                     if (Team == 100) {  // Only if I'm AXIS
-				
+                        .println("Aiming an enemy. . .", MyTeam, " ", .number(MyTeam) , " ", Team, " ", .number(Team));
  					    ?debug(Mode); if (Mode<=2) { .println("Aiming an enemy. . .", MyTeam, " ", .number(MyTeam) , " ", Team, " ", .number(Team)); }
 					    +aimed_agent(Object);
                         -+aimed("true");
@@ -87,7 +88,7 @@ patrollingRadius(64).
        
         }
 
-     -bucle(_)*/
+     -bucle(_)
      .
 
         
@@ -130,12 +131,16 @@ patrollingRadius(64).
         ?debug(Mode); if (Mode<=2) { .println("BAJO EL PUNTO DE MIRA TENGO A ALGUIEN DEL EQUIPO ", AimedAgentTeam); }
         ?my_formattedTeam(MyTeam);
 
-
+        
         if (AimedAgentTeam == 100) {
+
+            .print("No se si llega aqui ASDASDASDASDASDSADAS");
         
             .nth(6, AimedAgent, NewDestination);
             ?debug(Mode); if (Mode<=1) { .println("NUEVO DESTINO MARCADO: ", NewDestination); }
-            //update_destination(NewDestination);
+            .my_name(MyName);
+            //!add_task(task(2000, "TASK_GOTO_POSITION", MyName, NewDestination, ""));
+            update_destination(NewDestination);
         }
         .
     
@@ -150,13 +155,14 @@ patrollingRadius(64).
 +!perform_look_action 
 /// <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR PERFORM_LOOK_ACTION GOES HERE.") }.
     <-
-        .println("I'm going to send my position");
+        //.println("I'm going to send my position");
 
         ?my_position(X, Y, Z);
         .my_team("AXIS", E);
         .my_team("ALLIED", A);
         .concat("goto(",X, ", ", Y, ", ", Z, ")", Content);
         .send_msg_with_conversation_id(E, tell, Content, "INT");
+        .send_msg_with_conversation_id(A, tell, Content, "INT");
     .
 
 
@@ -191,12 +197,12 @@ patrollingRadius(64).
 /**  You can change initial priorities if you want to change the behaviour of each agent  **/
 +!setup_priorities
     <-  +task_priority("TASK_NONE",0);
-        +task_priority("TASK_GIVE_MEDICPAKS", 2000);
+        +task_priority("TASK_GIVE_MEDICPAKS", 0);
         +task_priority("TASK_GIVE_AMMOPAKS", 0);
         +task_priority("TASK_GIVE_BACKUP", 0);
-        +task_priority("TASK_GET_OBJECTIVE",1000);
-        +task_priority("TASK_ATTACK", 1000);
-        +task_priority("TASK_RUN_AWAY", 1500);
+        +task_priority("TASK_GET_OBJECTIVE",0);
+        +task_priority("TASK_ATTACK", 0);
+        +task_priority("TASK_RUN_AWAY", 0);
         +task_priority("TASK_GOTO_POSITION", 750);
         +task_priority("TASK_PATROLLING", 500);
         +task_priority("TASK_WALKING_PATH", 750).   
@@ -218,24 +224,31 @@ patrollingRadius(64).
 +!update_targets 
 	<-	?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR UPDATE_TARGETS GOES HERE.") }
 
-    .my_name(MyName);
-    +newPos(0,0);
-    +position(invalid);
-    while (position(invalid)) {
-        -position(invalid);
-        .random(X);
-        .random(Z);
-        NewObjectiveX = X * 255;
-        NewObjectiveZ = Z * 255;
-        check_position(pos(NewObjectiveX, 0, NewObjectiveZ));
-        -+newPos(NewObjectiveX, NewObjectiveZ);
+
+    if((aimed(Ag)) & (Ag=="true")){
+        .println("HEEEY SII , ESTAMOS EN EL IF");
+    } else {
+        .println("OH MIERDA ESTAMOS EN EL ELSE");
+        .my_name(MyName);
+        +newPos(0,0);
+        +position(invalid);
+        while (position(invalid)) {
+            -position(invalid);
+            .random(X);
+            .random(Z);
+            NewObjectiveX = X * 255;
+            NewObjectiveZ = Z * 255;
+            check_position(pos(NewObjectiveX, 0, NewObjectiveZ));
+            -+newPos(NewObjectiveX, NewObjectiveZ);
+        }
+        ?newPos(NewObjectiveX,NewObjectiveZ);
+
+        .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
+        !add_task(task("TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
     }
-    ?newPos(NewObjectiveX,NewObjectiveZ);
+    
 
-    .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
-    !add_task(task("TASK_PATROLLING", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
-
-
+    /*
     .println("I'm going to send my position");
 
     ?my_position(X, Y, Z);
@@ -243,7 +256,7 @@ patrollingRadius(64).
     .my_team("ALLIED", A);
     .concat("goto(",X, ", ", Y, ", ", Z, ")", Content);
     .send_msg_with_conversation_id(E, tell, Content, "INT");
-
+    */
     .
 	
 	
@@ -346,6 +359,19 @@ patrollingRadius(64).
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR cfa_refuse GOES HERE.")};
       -cfa_refuse.  
 
+/////////////////////////////////
+//  ANSWER_ACTION_INT
+/////////////////////////////////
+
++goto2(X,Y,Z)[source(A)]
+    <-
+        //.println("RECIDBIDO: ", X, " ", Y, " ", Z);
+        .my_name(MyName);
+        !add_task(task(1100,"TASK_GOTO_POSITION", MyName, pos(X, Y, Z), ""));
+        -+state(standing);
+        -goto(_,_,_)
+    .
+
 
 
 /////////////////////////////////
@@ -369,5 +395,5 @@ patrollingRadius(64).
     ?newPos(NewObjectiveX,NewObjectiveZ);
 
     .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
-    !add_task(task("TASK_PATROLLING", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
+    !add_task(task("TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
     .

@@ -316,7 +316,7 @@ patrollingRadius(64).
 
 +goto(X,Y,Z)[source(A)]
     <-
-        .println("RECIDBIDO: ", X, " ", Y, " ", Z);
+        //.println("RECIDBIDO: ", X, " ", Y, " ", Z);
         .my_name(MyName);
         !distance(pos(X,Y,Z));
         ?distance(D);
