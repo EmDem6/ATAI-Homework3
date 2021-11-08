@@ -147,8 +147,18 @@ patrollingRadius(64).
  * <em> It's very useful to overload this plan. </em>
  *
  */
-+!perform_look_action .
++!perform_look_action 
 /// <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR PERFORM_LOOK_ACTION GOES HERE.") }.
+    <-
+        .println("I'm going to send my position");
+
+        ?my_position(X, Y, Z);
+        .my_team("AXIS", E);
+        .my_team("ALLIED", A);
+        .concat("goto(",X, ", ", Y, ", ", Z, ")", Content);
+        .send_msg_with_conversation_id(E, tell, Content, "INT");
+    .
+
 
 /**
  * Action to do if this agent cannot shoot.
@@ -224,6 +234,16 @@ patrollingRadius(64).
 
     .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
     !add_task(task("TASK_PATROLLING", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
+
+
+    .println("I'm going to send my position");
+
+    ?my_position(X, Y, Z);
+    .my_team("AXIS", E);
+    .my_team("ALLIED", A);
+    .concat("goto(",X, ", ", Y, ", ", Z, ")", Content);
+    .send_msg_with_conversation_id(E, tell, Content, "INT");
+
     .
 	
 	
