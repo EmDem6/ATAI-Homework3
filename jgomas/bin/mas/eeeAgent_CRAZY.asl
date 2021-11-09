@@ -72,7 +72,7 @@ patrollingRadius(64).
                     ?my_formattedTeam(MyTeam);
           
                     if (Team == 100) {  // Only if I'm AXIS
-                        .println("Aiming an enemy. . .", MyTeam, " ", .number(MyTeam) , " ", Team, " ", .number(Team));
+                        //.println("Aiming an enemy. . .", MyTeam, " ", .number(MyTeam) , " ", Team, " ", .number(Team));
  					    ?debug(Mode); if (Mode<=2) { .println("Aiming an enemy. . .", MyTeam, " ", .number(MyTeam) , " ", Team, " ", .number(Team)); }
 					    +aimed_agent(Object);
                         -+aimed("true");
@@ -134,7 +134,7 @@ patrollingRadius(64).
         
         if (AimedAgentTeam == 100) {
 
-            .print("No se si llega aqui ASDASDASDASDASDSADAS");
+            //.print("No se si llega aqui ASDASDASDASDASDSADAS");
         
             .nth(6, AimedAgent, NewDestination);
             ?debug(Mode); if (Mode<=1) { .println("NUEVO DESTINO MARCADO: ", NewDestination); }
@@ -226,9 +226,9 @@ patrollingRadius(64).
 
 
     if((aimed(Ag)) & (Ag=="true")){
-        .println("HEEEY SII , ESTAMOS EN EL IF");
+        //.println("HEEEY SII , ESTAMOS EN EL IF");
     } else {
-        .println("OH MIERDA ESTAMOS EN EL ELSE");
+        //.println("OH MIERDA ESTAMOS EN EL ELSE");
         .my_name(MyName);
         +newPos(0,0);
         +position(invalid);

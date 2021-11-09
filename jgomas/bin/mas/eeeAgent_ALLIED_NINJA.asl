@@ -26,7 +26,6 @@ type("CLASS_SOLDIER").
 *
 *******************************/
 
-
 /////////////////////////////////
 //  GET AGENT TO AIM 
 /////////////////////////////////  
@@ -72,10 +71,39 @@ if (Length > 0) {
             ?my_formattedTeam(MyTeam);
             
             if (Team == 200) {  // Only if I'm ALLIED
-				
+
+                .println("HEMOS VISTO UN ENEMIGO uuh que miedo ");
+
                 ?debug(Mode); if (Mode<=2) { .println("Aiming an enemy. . .", MyTeam, " ", .number(MyTeam) , " ", Team, " ", .number(Team)); }
-                +aimed_agent(Object);
-                -+aimed("true");
+                
+                //+aimed_agent(Object);
+                //-+aimed("true");
+                .nth(6, Object, XPOSITION);
+
+                .println("X: ", XPOSITION);
+
+                .nth(1, XPOSITION, XX);
+                .nth(3, XPOSITION, ZZ);
+
+                .println("X: ", XX);
+                ?my_position(X,Y,Z);
+                
+                VectorX = -(XX - X);
+                VectorZ = -(ZZ - Z);
+
+                VectorX = VectorX / (math.sqrt(VectorX * VectorX + VectorZ * VectorZ));
+                VectorZ = VectorZ / (math.sqrt(VectorX * VectorX + VectorZ * VectorZ));
+
+                NewX = VectorX * 2 + X;
+                NewZ = VectorZ * 2 + Z;
+
+                .println("Estoy en la posicion " , X , "  " , Y , " Y me muevo a la posicion " , NewX, "  " , NewZ);
+
+                .my_name(MyName);
+                ?current_task(task(C_priority, _, _, _, _));
+                !add_task(task(C_priority + 1,"TASK_GOTO_POSITION", MyName, pos(NewX, Y, NewZ), ""));
+                -+state(standing);
+                -goto(_,_,_)
                 
             }
             
@@ -105,6 +133,9 @@ if (Length > 0) {
         !look.
       
         
+
+
+
 /////////////////////////////////
 //  PERFORM ACTIONS
 /////////////////////////////////
@@ -127,19 +158,11 @@ if (Length > 0) {
         ?debug(Mode); if (Mode<=2) { .println("BAJO EL PUNTO DE MIRA TENGO A ALGUIEN DEL EQUIPO ", AimedAgentTeam);             }
         ?my_formattedTeam(MyTeam);
 
-        //.print("No se si llega aqui 2");
+
         if (AimedAgentTeam == 200) {
     
                 .nth(6, AimedAgent, NewDestination);
                 ?debug(Mode); if (Mode<=1) { .println("NUEVO DESTINO DEBERIA SER: ", NewDestination); }
-                update_destination(NewDestination);
-
-                ?my_position(X, Y, Z);
-                .my_team("AXIS", E);
-                .my_team("ALLIED", A);
-                .concat("goto2(",X, ", ", Y, ", ", Z, ")", Content);
-                .send_msg_with_conversation_id(E, tell, Content, "INT");
-                .send_msg_with_conversation_id(A, tell, Content, "INT");
           
             }
  .
@@ -152,32 +175,8 @@ if (Length > 0) {
 * <em> It's very useful to overload this plan. </em>
 * 
 */
-+!perform_look_action 
-    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR PERFORM_LOOK_ACTION GOES HERE.") } 
-
-    /*
-    ?my_position(X,Y,Z);
-
-    .println("My position is X: ", X, " Y: ", Y, " Z: ", Z);
-
-    ?base_position(BX,BY,BZ);
-    !distance( pos(BX,BY,BZ) );
-    ?distance( D );
-
-    .println("Distance to the base is: ", D);
-
-    if (objectivePackTaken(on)) {
-        D2 = 0;
-    } else {
-        ?flag_position(BBX, BBY, BBZ);
-        !distance( pos(BBX, BBY, BBZ) );
-        ?distance( D2 );
-    }
-    .println("distance to the flag is: ", D2);
-
-    */
-    .
-
++!perform_look_action .
+   /// <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR PERFORM_LOOK_ACTION GOES HERE.") }. 
 
 /**
 * Action to do if this agent cannot shoot.
@@ -340,39 +339,14 @@ if (Length > 0) {
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR cfa_refuse GOES HERE.")};
       -cfa_refuse.  
 
-/////////////////////////////////
-//  ANSWER_ACTION_INT
-/////////////////////////////////
 
-+goto(X,Y,Z)[source(A)]
-    <-
-        //.println("RECIDBIDO: ", X, " ", Y, " ", Z);
-        .my_name(MyName);
-        !distance(pos(X,Y,Z));
-        ?distance(D);
-        if (D>7) 
-        {
-            ?current_task(task(C_priority, _, _, _, _));
-            !add_task(task(C_priority + 1,"TASK_GOTO_POSITION", MyName, pos(X, Y, Z), ""));
-	        -+state(standing);
-	        -goto(_,_,_)
-        }
-
-    .
 
 /////////////////////////////////
 //  Initialize variables
 /////////////////////////////////
 
 +!init
-   <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}
-   
-    ?my_position(X,Y,Z);
-    +base_position(X,Y,Z);
-    ?objective(ObjectiveX, ObjectiveY, ObjectiveZ);
-    +flag_position(ObjectiveX, ObjectiveY, ObjectiveZ); 
-   
-   .  
+   <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}.  
 
 
 
