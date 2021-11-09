@@ -140,7 +140,7 @@ patrollingRadius(64).
             ?debug(Mode); if (Mode<=1) { .println("NUEVO DESTINO MARCADO: ", NewDestination); }
             .my_name(MyName);
             //!add_task(task(2000, "TASK_GOTO_POSITION", MyName, NewDestination, ""));
-            update_destination(NewDestination);
+            //update_destination(NewDestination);
         }
         .
     
@@ -366,10 +366,11 @@ patrollingRadius(64).
 +goto2(X,Y,Z)[source(A)]
     <-
         //.println("RECIDBIDO: ", X, " ", Y, " ", Z);
-        .my_name(MyName);
-        !add_task(task(1100,"TASK_GOTO_POSITION", MyName, pos(X, Y, Z), ""));
-        -+state(standing);
-        -goto(_,_,_)
+        //.my_name(MyName);
+        //!add_task(task(1100,"TASK_GOTO_POSITION", MyName, pos(X, Y, Z), ""));
+        //-+state(standing);
+        //-goto(_,_,_)
+        update_destination(pos(X,Y,Z));
     .
 
 
