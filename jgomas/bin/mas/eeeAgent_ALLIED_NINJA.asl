@@ -201,31 +201,31 @@ if (Length > 0) {
 
                 +newPos(0,0);
                 +position(invalid);
-                +contador(2);
+                +contador(5);
                 while (position(invalid)) {
                     -position(invalid);
                     ?contador(Mult);
                     NewX = VectorUX * Mult + MIX;
                     NewZ = VectorUZ * Mult + MIZ;
 
-                    if (NewX < 0) {
-                        NewX = 1;
-                    }
-
-                    if (NewZ > 255) {
-                        NewZ = 254;
-                    }
-
-                    if (NewX > 255) {
-                        NewX = 254;
-                    }
-
-                    if (NewZ < 0) {
-                        NewZ = 1;
-                    }
+                    
 
                     check_position(pos(NewX, 0, NewZ));
-                    
+
+
+                    if (NewX > 255 | NewX < 0 | NewZ > 255 | NewZ < 0) {
+                        +newPos2(0,0);
+                        while (position(invalid)) {
+                            -position(invalid);
+                            .random(X);
+                            .random(Z);
+                            NewObjectiveX = X * 255;
+                            NewObjectiveZ = Z * 255;
+                            check_position(pos(NewObjectiveX, 0, NewObjectiveZ));
+                            -+newPos(NewObjectiveX, NewObjectiveZ);
+                        }
+                        ?newPos(NewX,NewZ);
+                    }
 
                     -+newPos(NewX, NewZ);
                     -+contador(Mult + 1);

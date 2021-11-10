@@ -1,53 +1,742 @@
-[A1] New random position is X235.0169900742397 Z 106.4928781383141
-[A1] New random position is X173.33894212753933 Z 126.12941322746273
-[T1] My position is X: 30.95922245862432 Y: 0 Z: 230.4271011059711
-[T1] Distance to the base is: 0.9300000295042983
-[T1] distance to the flag is: 193.14773988427945
-[T1] My position is X: 31.972560088201746 Y: 0 Z: 230.42581213526157
-[T1] Distance to the base is: 1.9430900436447105
-[T1] distance to the flag is: 192.1349232718429
-[T1] My position is X: 32.989881156600624 Y: 0 Z: 230.46281194974358
-[T1] Distance to the base is: 2.9601475417591545
-[T1] distance to the flag is: 191.119421930026
-[T1] My position is X: 34.06742906852966 Y: 0 Z: 230.49376886782468
-[T1] Distance to the base is: 4.0378496302200775
-[T1] distance to the flag is: 190.04354904796622
-[T1] My position is X: 35.133182144174604 Y: 0 Z: 230.51643528188796
-[T1] Distance to the base is: 5.103778688385243
-[T1] distance to the flag is: 188.9792020719967
-[T1] My position is X: 36.19707470588044 Y: 0 Z: 230.53103298959738
-[T1] Distance to the base is: 6.167769105172118
-[T1] distance to the flag is: 187.9164525552243
-[T1] My position is X: 37.24904430238939 Y: 0 Z: 230.53794777488147
-[T1] Distance to the base is: 7.219748992256663
-[T1] distance to the flag is: 186.86536387216864
-[T1] My position is X: 38.27303672034297 Y: 0 Z: 230.53676695849768
-[T1] Distance to the base is: 8.243675129641886
-[T1] distance to the flag is: 185.8419603086256
-[T1] My position is X: 39.28899110539297 Y: 0 Z: 230.5279044107395
-[T1] Distance to the base is: 9.259517172715569
-[T1] distance to the flag is: 184.82632481023734
-[T1] My position is X: 40.33484277307371 Y: 0 Z: 230.5107134653188
-[T1] Distance to the base is: 10.305239902596512
-[T1] distance to the flag is: 183.78051955802889
-[T1] My position is X: 41.40452572515763 Y: 0 Z: 230.48496839457954
-[T1] Distance to the base is: 11.374820133146871
-[T1] distance to the flag is: 182.7105964106442
-[T1] My position is X: 42.46196502597162 Y: 0 Z: 230.45076091218738
-[T1] Distance to the base is: 12.43222971196587
-[T1] distance to the flag is: 181.65260928095077
-[T1] My position is X: 43.52109736363759 Y: 0 Z: 230.40806805379518
-[T1] Distance to the base is: 13.491452489341901
-[T1] distance to the flag is: 180.59262895535812
-[T1] My position is X: 44.56985924641407 Y: 0 Z: 230.35724997502774
-[T1] Distance to the base is: 14.54047117508256
-[T1] distance to the flag is: 179.54272482642298
-[T1] My position is X: 45.63414511581172 Y: 0 Z: 230.29695982004037
-[T1] Distance to the base is: 15.605239114706302
-[T1] distance to the flag is: 178.47697300083985
-[T1] My position is X: 46.69190098599782 Y: 0 Z: 230.2281199700267
-[T1] Distance to the base is: 16.66374988833496
-[T1] distance to the flag is: 177.41744968948305
-[T1] My position is X: 47.71713987323261 Y: 0 Z: 230.15293151826032
-[T1] Distance to the base is: 17.690033923080566
-[T1] distance to the flag is: 176.3902076101217
+[A1] New random position is X8.566521758539626 Z 195.64333998866252
+[A1] New random position is X60.81367526342176 Z 57.338438293621564
+[T1] My position is X: 22.604184168524935 Y: 0 Z: 227.6925452632036
+[T1] Distance to the base is: 0.9920000433921894
+[T1] distance to the flag is: 201.4296639647354
+[T1] My position is X: 23.63012109382294 Y: 0 Z: 227.68135971182448
+[T1] Distance to the base is: 2.0179840207418893
+[T1] distance to the flag is: 200.4036945323212
+[T1] My position is X: 24.659968223243553 Y: 0 Z: 227.66361190719894
+[T1] Distance to the base is: 3.0479816235258728
+[T1] distance to the flag is: 199.37369515802442
+[T1] My position is X: 25.695675924542915 Y: 0 Z: 227.63900232682516
+[T1] Distance to the base is: 4.0839550448785795
+[T1] distance to the flag is: 198.3377101938977
+[T1] My position is X: 26.70921774709159 Y: 0 Z: 227.60852181334033
+[T1] Distance to the base is: 5.097891627276902
+[T1] distance to the flag is: 197.32378009667732
+[T1] My position is X: 27.742483921272907 Y: 0 Z: 227.56962389789985
+[T1] Distance to the base is: 6.131756913916613
+[T1] distance to the flag is: 196.28997639249
+[T1] My position is X: 28.77349563647732 Y: 0 Z: 227.52446971679402
+[T1] Distance to the base is: 7.163566715107172
+[T1] distance to the flag is: 195.25831580955813
+[T1] My position is X: 29.836083100290985 Y: 0 Z: 227.46969374381626
+[T1] Distance to the base is: 8.22726389710726
+[T1] distance to the flag is: 194.1949160006847
+[T1] My position is X: 30.858355246087935 Y: 0 Z: 227.410231619079
+[T1] Distance to the base is: 9.250886297903563
+[T1] distance to the flag is: 193.17174901610778
+[T1] My position is X: 31.906105798953057 Y: 0 Z: 227.34153761213764
+[T1] Distance to the base is: 10.300373527140211
+[T1] distance to the flag is: 192.12295558557375
+[T1] My position is X: 32.95328392294009 Y: 0 Z: 227.26463301182648
+[T1] Distance to the base is: 11.349703362898302
+[T1] distance to the flag is: 191.07460729393281
+[T1] My position is X: 33.95805409957055 Y: 0 Z: 227.18400460579832
+[T1] Distance to the base is: 12.356934466639443
+[T1] distance to the flag is: 190.0686167860215
+[T1] My position is X: 35.00000500380874 Y: 0 Z: 227.09208105831928
+[T1] Distance to the base is: 13.401940583991836
+[T1] distance to the flag is: 189.02528686350814
+[T1] My position is X: 36.02133742144769 Y: 0 Z: 226.9943451660612
+[T1] Distance to the base is: 14.42678420601178
+[T1] distance to the flag is: 188.00250979121193
+[T1] My position is X: 37.06973832240875 Y: 0 Z: 226.88586702535255
+[T1] Distance to the base is: 15.479380730701973
+[T1] distance to the flag is: 186.95253664858564
+[T1] My position is X: 38.119303946510286 Y: 0 Z: 226.76947079245303
+[T1] Distance to the base is: 16.533767597386124
+[T1] distance to the flag is: 185.9013263368502
+[T1] My position is X: 39.16585986037082 Y: 0 Z: 226.64444031775938
+[T1] Distance to the base is: 17.585865174566703
+[T1] distance to the flag is: 184.85305630621926
+[T1] My position is X: 40.15983270024958 Y: 0 Z: 226.51787864055441
+[T1] Distance to the base is: 18.585800471313824
+[T1] distance to the flag is: 183.85740894956825
+[T1] My position is X: 41.22214162718326 Y: 0 Z: 226.3740755986648
+[T1] Distance to the base is: 19.655292958137405
+[T1] distance to the flag is: 182.79327598766218
+[T1] My position is X: 42.27138060637897 Y: 0 Z: 226.223434688087
+[T1] Distance to the base is: 20.71249767478642
+[T1] distance to the flag is: 181.7422206547608
+[T1] My position is X: 43.31131912640564 Y: 0 Z: 226.06461414719848
+[T1] Distance to the base is: 21.761317145921666
+[T1] distance to the flag is: 180.70047600218555
+[T1] My position is X: 44.30858558184699 Y: 0 Z: 225.9047555349046
+[T1] Distance to the base is: 22.767973497649574
+[T1] distance to the flag is: 179.70150947959274
+[T1] My position is X: 45.30246101346454 Y: 0 Z: 225.73661604812858
+[T1] Distance to the base is: 23.772220090447547
+[T1] distance to the flag is: 178.70597716680598
+[T1] My position is X: 46.32639239188562 Y: 0 Z: 225.55451814772337
+[T1] Distance to the base is: 24.80792417013637
+[T1] distance to the flag is: 177.68040794402123
+[T1] My position is X: 47.36052904803221 Y: 0 Z: 225.36148871065416
+[T1] Distance to the base is: 25.855127500637654
+[T1] distance to the flag is: 176.6447178652685
+[T1] My position is X: 48.37530271787924 Y: 0 Z: 225.1630311466462
+[T1] Distance to the base is: 26.883942516466153
+[T1] distance to the flag is: 175.62854818304632
+[T1] My position is X: 49.41954546852059 Y: 0 Z: 224.9487811771601
+[T1] Distance to the base is: 27.944023281196284
+[T1] distance to the flag is: 174.58303265248912
+[A1] No me puedo mover, regenerando ruta... 
+[A1] New random position is X89.29163300687293 Z 181.49331174069448
+[T1] My position is X: 50.442470000983924 Y: 0 Z: 224.73028558309795
+[T1] Distance to the base is: 28.983768261910146
+[T1] distance to the flag is: 173.55906641945344
+[T1] My position is X: 51.414284704969894 Y: 0 Z: 224.52147446783363
+[T1] Distance to the base is: 29.97209729072667
+[T1] distance to the flag is: 172.5865031209503
+[T1] My position is X: 52.46033293342831 Y: 0 Z: 224.30607643175654
+[T1] Distance to the base is: 31.035297137103452
+[T1] distance to the flag is: 171.53994013084048
+[T1] My position is X: 53.443454697306166 Y: 0 Z: 224.1125051778021
+[T1] Distance to the base is: 32.0338320847061
+[T1] distance to the flag is: 170.55658240890293
+[T1] No me puedo mover, regenerando ruta... 
+[T1] My position is X: 54.073393883821005 Y: 0 Z: 224.27806967917462
+[T1] Distance to the base is: 32.64203540962501
+[T1] distance to the flag is: 169.92683363409535
+[T1] My position is X: 55.10880789285903 Y: 0 Z: 224.09202966453114
+[T1] Distance to the base is: 33.69135839759471
+[T1] distance to the flag is: 168.89121718085386
+[T1] No me puedo mover, regenerando ruta... 
+[T1] My position is X: 55.544965082519674 Y: 0 Z: 224.4029876099991
+[T1] Distance to the base is: 34.09345204502674
+[T1] distance to the flag is: 168.45551694160488
+[T1] My position is X: 56.587123903059776 Y: 0 Z: 224.23260735880183
+[T1] Distance to the base is: 35.147291380104946
+[T1] distance to the flag is: 167.41303769190986
+[T1] My position is X: 57.61704432086722 Y: 0 Z: 224.07444015494428
+[T1] Distance to the base is: 36.18785100086724
+[T1] distance to the flag is: 166.3829723314887
+[T1] My position is X: 58.64445013285078 Y: 0 Z: 223.92655716205076
+[T1] Distance to the base is: 37.22494252250245
+[T1] distance to the flag is: 165.3555661770045
+[T1] My position is X: 59.6752503868539 Y: 0 Z: 223.78857420881806
+[T1] Distance to the base is: 38.26444344018494
+[T1] distance to the flag is: 164.32488562688349
+[A1] New random position is X184.04306919918852 Z 186.59459189112494
+[T1] My position is X: 60.71935652549028 Y: 0 Z: 223.66003195064502
+[T1] Distance to the base is: 39.31623141035024
+[T1] distance to the flag is: 163.28099739934387
+[T1] My position is X: 61.734786783269286 Y: 0 Z: 223.54433725436485
+[T1] Distance to the base is: 40.33817916789699
+[T1] distance to the flag is: 162.26585299689162
+[T1] My position is X: 62.763999110450875 Y: 0 Z: 223.42594034343747
+[T1] Distance to the base is: 41.374117294938124
+[T1] distance to the flag is: 161.2370228184085
+[T1] My position is X: 63.76127810421366 Y: 0 Z: 223.3099642815435
+[T1] Distance to the base is: 42.37804635303653
+[T1] distance to the flag is: 160.24020763868194
+[T1] My position is X: 64.78622570450193 Y: 0 Z: 223.18952267465497
+[T1] Distance to the base is: 43.40996188518881
+[T1] distance to the flag is: 159.2158371485472
+[T1] My position is X: 65.81300961353791 Y: 0 Z: 223.06757771815052
+[T1] Distance to the base is: 44.44386463415376
+[T1] distance to the flag is: 158.18973841194105
+[A1] New random position is X11.902491072180288 Z 171.19500766477364
+[T1] My position is X: 66.85551661335677 Y: 0 Z: 222.94236244947194
+[T1] Distance to the base is: 45.49375103131656
+[T1] distance to the flag is: 157.148042482378
+[T1] My position is X: 67.87033375341649 Y: 0 Z: 222.82145842610518
+[T1] Distance to the base is: 46.515652897276105
+[T1] distance to the flag is: 156.13411428163596
+[T1] My position is X: 68.93383581362912 Y: 0 Z: 222.70383438103224
+[T1] Distance to the base is: 47.58562754318642
+[T1] distance to the flag is: 155.07158128034396
+[T1] My position is X: 69.96687709065556 Y: 0 Z: 222.6026343050305
+[T1] Distance to the base is: 48.623583326254014
+[T1] distance to the flag is: 154.03946112633182
+[T1] My position is X: 71.02095858950076 Y: 0 Z: 222.5118416318975
+[T1] Distance to the base is: 49.6813744277893
+[T1] distance to the flag is: 152.986279535793
+[T1] No me puedo mover, regenerando ruta... 
+[T1] My position is X: 71.99027182412128 Y: 0 Z: 222.4397889131191
+[T1] Distance to the base is: 50.65291450381498
+[T1] distance to the flag is: 152.01773488228324
+[T1] My position is X: 71.81184204503283 Y: 0 Z: 223.05864615553313
+[T1] Distance to the base is: 50.41458921853551
+[T1] distance to the flag is: 152.19106928064645
+[T1] No me puedo mover, regenerando ruta... 
+[A1] New random position is X125.94422578592894 Z 97.62803175360452
+[T1] No me puedo mover, regenerando ruta... 
+[T1] My position is X: 71.9615205915616 Y: 0 Z: 223.41784815371432
+[T1] Distance to the base is: 50.53184870697379
+[T1] distance to the flag is: 152.03959392737895
+[T1] My position is X: 71.87529201096062 Y: 0 Z: 223.9297913250955
+[T1] Distance to the base is: 50.40494773967175
+[T1] distance to the flag is: 152.12472419041075
+[T1] No me puedo mover, regenerando ruta... 
+[T1] My position is X: 72.1143681425482 Y: 0 Z: 224.2221672630811
+[T1] Distance to the base is: 50.622364876137425
+[T1] distance to the flag is: 151.88579434242746
+[T1] My position is X: 73.16894782554066 Y: 0 Z: 224.1674167348595
+[T1] Distance to the base is: 51.67821364709568
+[T1] distance to the flag is: 150.8311450875368
+[T1] My position is X: 74.23347646958628 Y: 0 Z: 224.11142799297843
+[T1] Distance to the base is: 52.744078735608355
+[T1] distance to the flag is: 149.7665649822536
+[T1] My position is X: 75.26201489688377 Y: 0 Z: 224.0565766313985
+[T1] Distance to the base is: 53.77396483928235
+[T1] distance to the flag is: 148.73799586336386
+[T1] My position is X: 76.26255448600904 Y: 0 Z: 224.00249829767017
+[T1] Distance to the base is: 54.77586827480248
+[T1] distance to the flag is: 147.73744553511457
+[T1] No me puedo mover, regenerando ruta... 
+[A1] New random position is X152.68853949877445 Z 222.70093094979143
+[T1] My position is X: 76.59805927562424 Y: 0 Z: 224.615455739207
+[T1] Distance to the base is: 55.072759681328414
+[T1] distance to the flag is: 147.4032255925199
+[T1] My position is X: 77.63052624450606 Y: 0 Z: 224.55964532873807
+[T1] Distance to the base is: 56.10673145291537
+[T1] distance to the flag is: 146.37054365668732
+[T1] My position is X: 78.68766898074098 Y: 0 Z: 224.5177288057111
+[T1] Distance to the base is: 57.16456246341882
+[T1] distance to the flag is: 145.3132533162993
+[T1] My position is X: 79.71132931828281 Y: 0 Z: 224.49239889784351
+[T1] Distance to the base is: 58.18804825304774
+[T1] distance to the flag is: 144.289510858453
+[T1] My position is X: 80.77325389311717 Y: 0 Z: 224.48248926862547
+[T1] Distance to the base is: 59.24891553879866
+[T1] distance to the flag is: 143.22755878761538
+[T1] My position is X: 81.82320603615567 Y: 0 Z: 224.4881280897899
+[T1] Distance to the base is: 60.297033515802646
+[T1] distance to the flag is: 142.17763189359104
+[A1] New random position is X114.73512945917271 Z 96.19471937857035
+[T1] My position is X: 82.86092357827638 Y: 0 Z: 224.51094704387668
+[T1] Distance to the base is: 61.3320982663347
+[T1] distance to the flag is: 141.1400012755377
+[T1] My position is X: 83.87401783680085 Y: 0 Z: 224.55210745478547
+[T1] Distance to the base is: 62.34173624409512
+[T1] distance to the flag is: 140.1270698325018
+[T1] My position is X: 84.92245687277006 Y: 0 Z: 224.60933885776637
+[T1] Distance to the base is: 63.38602493633606
+[T1] distance to the flag is: 139.0788779655275
+[T1] My position is X: 85.95087364821553 Y: 0 Z: 224.66642443005858
+[T1] Distance to the base is: 64.41050626943779
+[T1] distance to the flag is: 138.05073490572926
+[T1] My position is X: 87.01717254248207 Y: 0 Z: 224.72667747610873
+[T1] Distance to the base is: 65.4728590772085
+[T1] distance to the flag is: 136.98475491240043
+[T1] My position is X: 88.02151243541435 Y: 0 Z: 224.7844452810071
+[T1] Distance to the base is: 66.47360295946835
+[T1] distance to the flag is: 135.98075023602078
+[T1] My position is X: 89.02578996706339 Y: 0 Z: 224.84328738049564
+[T1] Distance to the base is: 67.47439519158172
+[T1] distance to the flag is: 134.9768443386546
+[A1] New random position is X228.63736425406262 Z 202.3514152480842
+[T1] My position is X: 90.03798735859179 Y: 0 Z: 224.90372032661915
+[T1] Distance to the base is: 68.4831880145801
+[T1] distance to the flag is: 133.96506089785333
+[T1] My position is X: 91.06965725145191 Y: 0 Z: 224.97263327567572
+[T1] Distance to the base is: 69.51125514595002
+[T1] distance to the flag is: 132.93390101375726
+[T1] My position is X: 92.100017661764 Y: 0 Z: 225.05867190768174
+[T1] Distance to the base is: 70.53754029203171
+[T1] distance to the flag is: 131.90423089133677
+[T1] My position is X: 93.15795171385427 Y: 0 Z: 225.1715915438582
+[T1] Distance to the base is: 71.59064347262223
+[T1] distance to the flag is: 130.84729353891782
+[T1] My position is X: 94.23688213799409 Y: 0 Z: 225.311266482354
+[T1] Distance to the base is: 72.66415881099464
+[T1] distance to the flag is: 129.76974291820332
+[T1] My position is X: 95.27475417693763 Y: 0 Z: 225.4699479086134
+[T1] Distance to the base is: 73.69647735126367
+[T1] distance to the flag is: 128.7336384130499
+[T1] My position is X: 96.30495498682909 Y: 0 Z: 225.65066932291947
+[T1] Distance to the base is: 74.72100754401211
+[T1] distance to the flag is: 127.70571338091877
+[A1] New random position is X231.76778004012883 Z 181.9806107968917
+[T1] My position is X: 97.36593466672157 Y: 0 Z: 225.86254613234308
+[T1] Distance to the base is: 75.77612585954304
+[T1] distance to the flag is: 126.647761847291
+[T1] My position is X: 98.38775859821887 Y: 0 Z: 226.09480838477086
+[T1] Distance to the base is: 76.79241136395308
+[T1] distance to the flag is: 125.62970752233822
+[T1] My position is X: 99.37615773473522 Y: 0 Z: 226.33849544786756
+[T1] Distance to the base is: 77.77591332993555
+[T1] distance to the flag is: 124.64578060214191
+[T1] My position is X: 100.4192897090266 Y: 0 Z: 226.60239147061847
+[T1] Distance to the base is: 78.81473232819464
+[T1] distance to the flag is: 123.60810813772633
+[T1] My position is X: 101.45685075210932 Y: 0 Z: 226.87190697685202
+[T1] Distance to the base is: 79.8489060283424
+[T1] distance to the flag is: 122.57679746703494
+[T1] My position is X: 102.45964103552471 Y: 0 Z: 227.13993975754076
+[T1] Distance to the base is: 80.84930511133135
+[T1] distance to the flag is: 121.5809116551381
+[T1] My position is X: 103.42958461727352 Y: 0 Z: 227.40682996581484
+[T1] Distance to the base is: 81.81779819575245
+[T1] distance to the flag is: 120.61853736461565
+[A1] New random position is X229.8575278543834 Z 147.09345692784524
+[T1] My position is X: 104.42616112603199 Y: 0 Z: 227.68987256355095
+[T1] Distance to the base is: 82.81381293238645
+[T1] distance to the flag is: 119.63075734355655
+[T1] My position is X: 105.41490838972683 Y: 0 Z: 227.98533681076768
+[T1] Distance to the base is: 83.80300748730058
+[T1] distance to the flag is: 118.65204111903064
+[T1] My position is X: 106.4065495554278 Y: 0 Z: 228.298731504085
+[T1] Distance to the base is: 84.79623744338267
+[T1] distance to the flag is: 117.6719961588324
+[T1] My position is X: 107.40206489543111 Y: 0 Z: 228.62616148223873
+[T1] Distance to the base is: 85.79459805460323
+[T1] distance to the flag is: 116.68967323936171
+[T1] My position is X: 108.36481768838634 Y: 0 Z: 228.9568890783846
+[T1] Distance to the base is: 86.7614166517049
+[T1] distance to the flag is: 115.74137608295288
+[T1] My position is X: 109.34297892693453 Y: 0 Z: 229.3100544949082
+[T1] Distance to the base is: 87.74520468879878
+[T1] distance to the flag is: 114.77991618784304
+[T1] My position is X: 110.28681590779091 Y: 0 Z: 229.66946875048234
+[T1] Distance to the base is: 88.69609582663175
+[T1] distance to the flag is: 113.85442948037344
+[T1] My position is X: 111.22720626892763 Y: 0 Z: 230.04859049389853
+[T1] Distance to the base is: 89.64534515179598
+[T1] distance to the flag is: 112.93488589835239
+[A1] New random position is X87.50630047465864 Z 135.65746767380207
+[T1] No me puedo mover, regenerando ruta... 
+[T1] My position is X: 111.87494661286699 Y: 0 Z: 230.4782646352778
+[T1] Distance to the base is: 90.30501340198474
+[T1] distance to the flag is: 112.31204525674046
+[T1] My position is X: 111.73897633473047 Y: 0 Z: 231.19149188167967
+[T1] Distance to the base is: 90.19381535247219
+[T1] distance to the flag is: 112.49113293881643
+[T1] No me puedo mover, regenerando ruta... 
+[T1] No me puedo mover, regenerando ruta... 
+[T1] My position is X: 111.9099924871451 Y: 0 Z: 231.7096858921587
+[T1] Distance to the base is: 90.38614792353442
+[T1] distance to the flag is: 112.35483541346859
+[T1] My position is X: 111.76082228078513 Y: 0 Z: 232.3565500824131
+[T1] Distance to the base is: 90.26810371416174
+[T1] distance to the flag is: 112.5498331600957
+[T1] My position is X: 112.70709485433537 Y: 0 Z: 232.7627507393047
+[T1] Distance to the base is: 91.23472639947397
+[T1] distance to the flag is: 111.63734382490964
+[T1] My position is X: 113.56644002393858 Y: 0 Z: 233.16775190197762
+[T1] Distance to the base is: 92.11587054400378
+[T1] distance to the flag is: 110.81344162114345
+[T1] My position is X: 114.45292240956589 Y: 0 Z: 233.5855425751176
+[T1] Distance to the base is: 93.02626055226159
+[T1] distance to the flag is: 109.96565297884601
+[A1] New random position is X166.17537684467624 Z 105.35560777492393
+[T1] My position is X: 115.29417609957316 Y: 0 Z: 233.98201739642036
+[T1] Distance to the base is: 93.8914981750366
+[T1] distance to the flag is: 109.16316604593808
+[T1] My position is X: 116.17523103795189 Y: 0 Z: 234.39725016556127
+[T1] Distance to the base is: 94.7989866139122
+[T1] distance to the flag is: 108.32489839701822
+[A1] New random position is X140.9005184921083 Z 139.6798391967492
+[T1] My position is X: 117.0381945034743 Y: 0 Z: 234.80395659650839
+[T1] Distance to the base is: 95.68910858606888
+[T1] distance to the flag is: 107.50606175102794
+[A1] New random position is X98.83286881351472 Z 126.95777481172867
+[T1] My position is X: 117.93010433635017 Y: 0 Z: 235.22430517364768
+[T1] Distance to the base is: 96.61036926656064
+[T1] distance to the flag is: 106.66211976483842
+[A1] New random position is X179.3216619247195 Z 146.31669202759292
+[T1] My position is X: 119.3499998524785 Y: 0 Z: 236
+[T1] Distance to the base is: 98.08853159551043
+[T1] distance to the flag is: 105.33576093082657
+[T1] My position is X: 118.37199983745813 Y: 0 Z: 236
+[T1] Distance to the base is: 97.1140652539567
+[T1] distance to the flag is: 106.30745231797225
+[A1] New random position is X96.616187457169 Z 166.29357039581024
+[T1] My position is X: 117.42399982362986 Y: 0 Z: 236
+[T1] Distance to the base is: 96.16955899328742
+[T1] distance to the flag is: 107.24944668199295
+[A1] New random position is X15.216046819274125 Z 242.55832179475718
+[T1] My position is X: 116.44399978965521 Y: 0 Z: 236
+[T1] Distance to the base is: 95.19324365979499
+[T1] distance to the flag is: 108.22334859561354
+[A1] New random position is X60.10786600424051 Z 9.887476978513542
+[T1] My position is X: 115.48199976235628 Y: 0 Z: 236
+[T1] Distance to the base is: 94.23493505452721
+[T1] distance to the flag is: 109.17946865403422
+[A1] New random position is X177.41316591941833 Z 84.9678345597302
+[T1] My position is X: 114.48199972510338 Y: 0 Z: 236
+[T1] Distance to the base is: 93.23885284540722
+[T1] distance to the flag is: 110.17346497325141
+[T1] My position is X: 113.4639997035265 Y: 0 Z: 236
+[T1] Distance to the base is: 92.22492827209767
+[T1] distance to the flag is: 111.18546380504058
+[T1] My position is X: 112.40799967199564 Y: 0 Z: 236
+[T1] Distance to the base is: 91.17325179363976
+[T1] distance to the flag is: 112.23535333042493
+[T1] My position is X: 111.33999964594841 Y: 0 Z: 236
+[T1] Distance to the base is: 90.10972731067875
+[T1] distance to the flag is: 113.2972889339145
+[T1] My position is X: 110.30599961429834 Y: 0 Z: 236
+[T1] Distance to the base is: 89.08016237422956
+[T1] distance to the flag is: 114.32552525006797
+[T1] My position is X: 109.2519995868206 Y: 0 Z: 236
+[T1] Distance to the base is: 88.03079022788025
+[T1] distance to the flag is: 115.37375610953741
+[T1] My position is X: 108.78000000864267 Y: 0 Z: 236
+[T1] Distance to the base is: 87.56089913453337
+[T1] distance to the flag is: 115.84320609344505
+[T1] My position is X: 109.77000004798174 Y: 0 Z: 236
+[T1] Distance to the base is: 88.54650252594364
+[T1] distance to the flag is: 114.85857777736103
+[T1] My position is X: 110.70200008153915 Y: 0 Z: 236
+[T1] Distance to the base is: 89.47445220685398
+[T1] distance to the flag is: 113.93171983922456
+[T1] My position is X: 111.65000012516975 Y: 0 Z: 236
+[T1] Distance to the base is: 90.41841783935791
+[T1] distance to the flag is: 112.98903695436277
+[T1] My position is X: 112.62800016999245 Y: 0 Z: 236
+[T1] Distance to the base is: 91.39234332684654
+[T1] distance to the flag is: 112.0166163840669
+[T1] My position is X: 113.60600019991398 Y: 0 Z: 236
+[T1] Distance to the base is: 92.36635490483204
+[T1] distance to the flag is: 111.04429382846014
+[T1] My position is X: 114.66200023144484 Y: 0 Z: 236
+[T1] Distance to the base is: 93.41814196269922
+[T1] distance to the flag is: 109.99453710702441
+[T1] My position is X: 115.60595128703412 Y: 0 Z: 235.88638669082098
+[T1] Distance to the base is: 94.34849382044558
+[T1] distance to the flag is: 109.04382598273295
+[T1] My position is X: 114.5746989096604 Y: 0 Z: 235.65922540252203
+[T1] Distance to the base is: 93.30153662585774
+[T1] distance to the flag is: 110.04469117453279
+[T1] My position is X: 113.63180326216504 Y: 0 Z: 235.44023972198835
+[T1] Distance to the base is: 92.34351598064468
+[T1] distance to the flag is: 110.95953287599045
+[T1] My position is X: 112.65982502277686 Y: 0 Z: 235.20520255365753
+[T1] Distance to the base is: 91.35540308636365
+[T1] distance to the flag is: 111.90259661074518
+[T1] My position is X: 111.72096137706468 Y: 0 Z: 234.96953130693757
+[T1] Distance to the base is: 90.40050823190978
+[T1] distance to the flag is: 112.81362121297447
+[T1] My position is X: 110.75576565556507 Y: 0 Z: 234.72374021186383
+[T1] Distance to the base is: 89.41884989515744
+[T1] distance to the flag is: 113.75084710185169
+[T1] My position is X: 109.78669363103609 Y: 0 Z: 234.47696200014101
+[T1] Distance to the base is: 88.43357180154993
+[T1] distance to the flag is: 114.69283362304382
+[T1] My position is X: 108.89320923038417 Y: 0 Z: 234.24943249045137
+[T1] Distance to the base is: 87.52544127960431
+[T1] distance to the flag is: 115.56220899436128
+[T1] My position is X: 107.94739493738969 Y: 0 Z: 234.00857695656012
+[T1] Distance to the base is: 86.5644425573246
+[T1] distance to the flag is: 116.48338402756674
+[T1] My position is X: 107.00158065883551 Y: 0 Z: 233.7677214263461
+[T1] Distance to the base is: 85.60378329239867
+[T1] distance to the flag is: 117.4054449767713
+[T1] My position is X: 105.48971438198458 Y: 0 Z: 233.35833841353153
+[T1] Distance to the base is: 84.06728017194845
+[T1] distance to the flag is: 118.8792088429502
+[T1] My position is X: 106.44800483651582 Y: 0 Z: 233.49509908457972
+[T1] Distance to the base is: 85.03262382545903
+[T1] distance to the flag is: 117.93484842717947
+[T1] My position is X: 107.47757308747637 Y: 0 Z: 233.642032036093
+[T1] Distance to the base is: 86.06983638490478
+[T1] distance to the flag is: 116.92067719342656
+[T1] My position is X: 108.52496078016841 Y: 0 Z: 233.79150805666995
+[T1] Distance to the base is: 87.12506888497431
+[T1] distance to the flag is: 115.88942278243289
+[T1] My position is X: 108.20258034897168 Y: 0 Z: 233.65607651031357
+[T1] Distance to the base is: 86.79409537195924
+[T1] distance to the flag is: 116.19932104538903
+[T1] My position is X: 107.22500971455517 Y: 0 Z: 233.3793135956336
+[T1] Distance to the base is: 85.80011771302915
+[T1] distance to the flag is: 117.15105581978753
+[T1] My position is X: 106.19570732447507 Y: 0 Z: 233.07980156970123
+[T1] Distance to the base is: 84.75359062514798
+[T1] distance to the flag is: 118.15368876732494
+[T1] My position is X: 105.26019044895979 Y: 0 Z: 232.80162944019202
+[T1] Distance to the base is: 83.80261528519897
+[T1] distance to the flag is: 119.06557459240582
+[T1] My position is X: 104.34133242020252 Y: 0 Z: 232.52360858191605
+[T1] Distance to the base is: 82.86886142546439
+[T1] distance to the flag is: 119.9618632325715
+[T1] My position is X: 103.41418330622504 Y: 0 Z: 232.23849308745898
+[T1] Distance to the base is: 81.927043361468
+[T1] distance to the flag is: 120.86691836915841
+[T1] My position is X: 102.47111344258145 Y: 0 Z: 231.94394314118335
+[T1] Distance to the base is: 80.9694978606136
+[T1] distance to the flag is: 121.78824450872203
+[T1] My position is X: 101.54175278896881 Y: 0 Z: 231.65245583950403
+[T1] Distance to the base is: 80.02653621974527
+[T1] distance to the flag is: 122.69711647130745
+[T1] My position is X: 100.64292554166514 Y: 0 Z: 231.37054512166378
+[T1] Distance to the base is: 79.11527024126447
+[T1] distance to the flag is: 123.57707212225758
+[T1] My position is X: 99.70593154891618 Y: 0 Z: 231.07666367792663
+[T1] Distance to the base is: 78.16608509161355
+[T1] distance to the flag is: 124.49535983695615
+[T1] My position is X: 98.7994709624762 Y: 0 Z: 230.79235881802862
+[T1] Distance to the base is: 77.24861131561825
+[T1] distance to the flag is: 125.38464263851729
+[T1] My position is X: 97.87392698554082 Y: 0 Z: 230.5020685896079
+[T1] Distance to the base is: 76.31264357023124
+[T1] distance to the flag is: 126.2935595744797
+[T1] My position is X: 96.78619406402099 Y: 0 Z: 230.12140238282197
+[T1] Distance to the base is: 75.21248598432794
+[T1] distance to the flag is: 127.36099869210098
+[T1] My position is X: 97.69718188779858 Y: 0 Z: 230.3181896628789
+[T1] Distance to the base is: 76.1294973247605
+[T1] distance to the flag is: 126.46075036824645
+[T1] My position is X: 98.65704244462124 Y: 0 Z: 230.5255341995246
+[T1] Distance to the base is: 77.0960934710899
+[T1] distance to the flag is: 125.51270694761804
+[T1] My position is X: 98.28887045129014 Y: 0 Z: 230.3854760430457
+[T1] Distance to the base is: 76.72315770048799
+[T1] distance to the flag is: 125.87319967613767
+[T1] My position is X: 97.39633720220698 Y: 0 Z: 230.11026622908156
+[T1] Distance to the base is: 75.82196492196857
+[T1] distance to the flag is: 126.75102676983542
+[T1] My position is X: 96.48660310649491 Y: 0 Z: 229.82975258827886
+[T1] Distance to the base is: 74.90423159537107
+[T1] distance to the flag is: 127.64659181725573
+[T1] My position is X: 95.54246729616564 Y: 0 Z: 229.538631287213
+[T1] Distance to the base is: 73.9527101881318
+[T1] distance to the flag is: 128.57688028915763
+[T1] My position is X: 94.61170991973 Y: 0 Z: 229.25163518406757
+[T1] Distance to the base is: 73.01562036169184
+[T1] distance to the flag is: 129.49482337917078
+[T1] My position is X: 93.68477495602963 Y: 0 Z: 228.96581770984028
+[T1] Distance to the base is: 72.08335151210726
+[T1] distance to the flag is: 130.40980493731294
+[T1] My position is X: 92.44343032436915 Y: 0 Z: 228.5587651459779
+[T1] Distance to the base is: 70.83615592915609
+[T1] distance to the flag is: 131.63553230216868
+[T1] My position is X: 93.36417775979531 Y: 0 Z: 228.77588310203805
+[T1] Distance to the base is: 71.75973257793436
+[T1] distance to the flag is: 130.7230932612088
+[T1] My position is X: 94.32775067774021 Y: 0 Z: 229.00309957249422
+[T1] Distance to the base is: 72.72688357667597
+[T1] distance to the flag is: 129.76872986057387
+[T1] My position is X: 94.13148267069195 Y: 0 Z: 228.91012005718088
+[T1] Distance to the base is: 72.52904949146176
+[T1] distance to the flag is: 129.96130605795216
+[T1] My position is X: 93.15694778346183 Y: 0 Z: 228.6022867472294
+[T1] Distance to the base is: 71.55015183441735
+[T1] distance to the flag is: 130.92396784639345
+[T1] My position is X: 92.20769568692971 Y: 0 Z: 228.30072990328298
+[T1] Distance to the base is: 70.59781028032093
+[T1] distance to the flag is: 131.86245771200353
+[T1] My position is X: 91.28703552110157 Y: 0 Z: 228.008256096832
+[T1] Distance to the base is: 69.6753199473064
+[T1] distance to the flag is: 132.77348025006782
+[T1] My position is X: 90.35303247037356 Y: 0 Z: 227.71154354466287
+[T1] Distance to the base is: 68.74068165489345
+[T1] distance to the flag is: 133.69849470113323
+[T1] My position is X: 89.43427843704616 Y: 0 Z: 227.4196752752479
+[T1] Distance to the base is: 67.82255213922254
+[T1] distance to the flag is: 134.60916610226278
+[T1] My position is X: 88.49265085631522 Y: 0 Z: 227.12054057493438
+[T1] Distance to the base is: 66.88290406984135
+[T1] distance to the flag is: 135.54327517596843
+[A1] Finished!
+[Messaging] Removing all local alias entries for agent A1
+[T1] My position is X: 87.27350208839758 Y: 0 Z: 226.71151745991457
+[T1] Distance to the base is: 65.66875369721251
+[T1] distance to the flag is: 136.75338225472467
+[T1] My position is X: 88.27981734505586 Y: 0 Z: 226.96602421179136
+[T1] Distance to the base is: 66.6716257487595
+[T1] distance to the flag is: 135.75258848182725
+[T1] My position is X: 89.2357198850289 Y: 0 Z: 227.20778110551794
+[T1] Distance to the base is: 67.62523938260085
+[T1] distance to the flag is: 134.80245196036793
+[T1] My position is X: 90.25366884553763 Y: 0 Z: 227.4652301323525
+[T1] Distance to the base is: 68.64175704753974
+[T1] distance to the flag is: 133.79121390117245
+[T1] My position is X: 91.25804513349631 Y: 0 Z: 227.71924650050272
+[T1] Distance to the base is: 69.64569483388195
+[T1] distance to the flag is: 132.79404872324818
+[T1] My position is X: 92.25854352017149 Y: 0 Z: 227.97228211033365
+[T1] Distance to the base is: 70.64667686692857
+[T1] distance to the flag is: 131.80132920646372
+[T1] My position is X: 93.2764924590108 Y: 0 Z: 228.22973113168788
+[T1] Distance to the base is: 71.66602094913523
+[T1] distance to the flag is: 130.7919188989344
+[T1] My position is X: 94.31189197168362 Y: 0 Z: 228.49159357004564
+[T1] Distance to the base is: 72.70373464324713
+[T1] distance to the flag is: 129.76586522180142
+[T1] My position is X: 95.33371883347584 Y: 0 Z: 228.75002335519946
+[T1] Distance to the base is: 73.72869340899922
+[T1] distance to the flag is: 128.75393054620892
+[T1] My position is X: 96.35360672656844 Y: 0 Z: 229.00796275662668
+[T1] Distance to the base is: 74.75251264341813
+[T1] distance to the flag is: 127.74459443235675
+[T1] My position is X: 97.36767778579369 Y: 0 Z: 229.26443102514196
+[T1] Distance to the base is: 75.77125807062824
+[T1] distance to the flag is: 126.7417029370406
+[T1] My position is X: 98.37787092928917 Y: 0 Z: 229.51991853168445
+[T1] Distance to the base is: 76.78683636976388
+[T1] distance to the flag is: 125.74334500423775
+[T1] My position is X: 99.35122401420315 Y: 0 Z: 229.76608883510744
+[T1] Distance to the base is: 77.76603953001045
+[T1] distance to the flag is: 124.78207056789735
+[T1] My position is X: 100.32845501484691 Y: 0 Z: 230.01323990050327
+[T1] Distance to the base is: 78.74977212695086
+[T1] distance to the flag is: 123.81764855268311
+[T1] My position is X: 101.35997661178997 Y: 0 Z: 230.27412157688826
+[T1] Distance to the base is: 79.7888137162066
+[T1] distance to the flag is: 122.80040691391163
+[T1] My position is X: 102.39149822317931 Y: 0 Z: 230.53500325692676
+[T1] Distance to the base is: 80.82850470530165
+[T1] distance to the flag is: 121.7839643465881
+[T1] My position is X: 103.42495877437567 Y: 0 Z: 230.79637531338474
+[T1] Distance to the base is: 81.87077638218426
+[T1] distance to the flag is: 120.76643276987771
+[T1] My position is X: 104.40412870760329 Y: 0 Z: 231.04401675337323
+[T1] Distance to the base is: 82.85885157512426
+[T1] distance to the flag is: 119.80313268946401
+[T1] My position is X: 105.43758925879966 Y: 0 Z: 231.30538880983121
+[T1] Distance to the base is: 83.90227749652188
+[T1] distance to the flag is: 118.78726340154446
+[T1] My position is X: 106.45359926505508 Y: 0 Z: 231.5623474565928
+[T1] Distance to the base is: 84.9286311700441
+[T1] distance to the flag is: 117.78941134412082
+[T1] My position is X: 107.42889131144551 Y: 0 Z: 231.80900814191557
+[T1] Distance to the base is: 85.91434398964864
+[T1] distance to the flag is: 116.83237560299494
+[T1] My position is X: 108.46041291561168 Y: 0 Z: 232.06988982012734
+[T1] Distance to the base is: 86.9573927936482
+[T1] distance to the flag is: 115.82106589623473
+[T1] My position is X: 109.47060605910717 Y: 0 Z: 232.32537732666984
+[T1] Distance to the base is: 87.97936110717076
+[T1] distance to the flag is: 114.83158966111915
+[T1] My position is X: 110.47692130854232 Y: 0 Z: 232.57988407671985
+[T1] Distance to the base is: 88.99786821380025
+[T1] distance to the flag is: 113.84684363809497
+[A2] No me puedo mover, regenerando ruta... 
+[T1] My position is X: 111.44639649939596 Y: 0 Z: 232.82507362365038
+[T1] Distance to the base is: 89.97951028288513
+[T1] distance to the flag is: 112.89905041865514
+[T1] My position is X: 112.46046754417493 Y: 0 Z: 233.08154188851213
+[T1] Distance to the base is: 91.00673562675401
+[T1] distance to the flag is: 111.90863105023158
+[T1] My position is X: 113.46096594529642 Y: 0 Z: 233.33457750199668
+[T1] Distance to the base is: 92.02062680604237
+[T1] distance to the flag is: 110.93246768592007
+[T1] My position is X: 114.49054860243244 Y: 0 Z: 233.5949688019622
+[T1] Distance to the base is: 93.06440719229207
+[T1] distance to the flag is: 109.92899240740287
+[T1] My position is X: 115.51237545700151 Y: 0 Z: 233.85339858528923
+[T1] Distance to the base is: 94.10072794875794
+[T1] distance to the flag is: 108.93417343819702
+[T1] My position is X: 116.50124015427255 Y: 0 Z: 234.10349192381597
+[T1] Distance to the base is: 95.10398898188082
+[T1] distance to the flag is: 107.97251463879128
+[T1] My position is X: 117.5191891147813 Y: 0 Z: 234.36094095065053
+[T1] Distance to the base is: 96.13712567679424
+[T1] distance to the flag is: 106.98370055366647
+[T1] My position is X: 118.5274433112466 Y: 0 Z: 234.61593807894675
+[T1] Distance to the base is: 97.16077936623964
+[T1] distance to the flag is: 106.00546380143965
+[T1] My position is X: 119.52600276533792 Y: 0 Z: 234.86848331418503
+[T1] Distance to the base is: 98.17492890490954
+[T1] distance to the flag is: 105.03780285087316
+[T1] My position is X: 120.52456221220609 Y: 0 Z: 235.12102854759652
+[T1] Distance to the base is: 99.18940509255707
+[T1] distance to the flag is: 104.07133851994057
+[T1] My position is X: 121.52893851461107 Y: 0 Z: 235.3750449194003
+[T1] Distance to the base is: 100.21011034382735
+[T1] distance to the flag is: 103.10048539585414
+[T1] My position is X: 122.53331480979288 Y: 0 Z: 235.62906128937726
+[T1] Distance to the base is: 101.23112633123179
+[T1] distance to the flag is: 102.13091241128069
+[T1] My position is X: 124.54806802330754 Y: 0 Z: 235.93423183720316
+[T1] Distance to the base is: 103.2636811938075
+[T1] distance to the flag is: 100.16542648758991
+[T1] My position is X: 125.58264572913502 Y: 0 Z: 235.81008251250395
+[T1] Distance to the base is: 104.28529009288775
+[T1] distance to the flag is: 99.12342644717793
+[T1] My position is X: 126.57949409781942 Y: 0 Z: 235.69046070826192
+[T1] Distance to the base is: 105.2700207338079
+[T1] distance to the flag is: 98.11942642417054
+[T1] My position is X: 127.55052766817052 Y: 0 Z: 235.57393667981992
+[T1] Distance to the base is: 106.22959723394393
+[T1] distance to the flag is: 97.1414264016996
+[T1] My position is X: 128.60694863473634 Y: 0 Z: 235.44716616383215
+[T1] Distance to the base is: 107.2739316022808
+[T1] distance to the flag is: 96.07742639120916
+[T1] My position is X: 129.6693268965983 Y: 0 Z: 235.31968077240876
+[T1] Distance to the base is: 108.32454110729913
+[T1] distance to the flag is: 95.00742634620765
+[T1] My position is X: 130.7257478853567 Y: 0 Z: 235.19291025375782
+[T1] Distance to the base is: 109.36963214712678
+[T1] distance to the flag is: 93.94342631336542
+[T1] My position is X: 131.73848228606087 Y: 0 Z: 235.07138212567338
+[T1] Distance to the base is: 110.37184435793664
+[T1] distance to the flag is: 92.92342628773534
+[T1] My position is X: 132.70951586380957 Y: 0 Z: 234.95485809634363
+[T1] Distance to the base is: 111.3330924222148
+[T1] distance to the flag is: 91.94542625781372
+[T1] My position is X: 133.75997959425925 Y: 0 Z: 234.82880244868977
+[T1] Distance to the base is: 112.37329571919484
+[T1] distance to the flag is: 90.88742622222975
+[T1] My position is X: 134.78661426928184 Y: 0 Z: 234.70560628768712
+[T1] Distance to the base is: 113.39022090709415
+[T1] distance to the flag is: 89.85342619803026
+[T1] My position is X: 135.81722045970687 Y: 0 Z: 234.58193354483623
+[T1] Distance to the base is: 114.41138790977827
+[T1] distance to the flag is: 88.81542616572456
+[T1] My position is X: 136.84782664273445 Y: 0 Z: 234.45826080287304
+[T1] Distance to the base is: 115.43285518415074
+[T1] distance to the flag is: 87.77742614086938
+[T1] My position is X: 137.88637585656684 Y: 0 Z: 234.33363489721324
+[T1] Distance to the base is: 116.46249080065341
+[T1] distance to the flag is: 86.73142609980178
+[T1] My position is X: 138.93286807901163 Y: 0 Z: 234.20805583051998
+[T1] Distance to the base is: 117.50029365475781
+[T1] distance to the flag is: 85.67742606487343
+[T1] My position is X: 139.97936029405886 Y: 0 Z: 234.08247676471433
+[T1] Distance to the base is: 118.5383823275131
+[T1] distance to the flag is: 84.62342603739567
+[T1] My position is X: 141.00798071938522 Y: 0 Z: 233.9590423136753
+[T1] Distance to the base is: 119.55901405611696
+[T1] distance to the flag is: 83.58742601659361
+[T1] My position is X: 142.03660114471157 Y: 0 Z: 233.83560786263627
+[T1] Distance to the base is: 120.5799079092536
+[T1] distance to the flag is: 82.55142599579156
+[T1] My position is X: 143.0711788283466 Y: 0 Z: 233.7114585406002
+[T1] Distance to the base is: 121.60697200635778
+[T1] distance to the flag is: 81.50942597773125
+[T1] My position is X: 144.1017850335666 Y: 0 Z: 233.58778579597387
+[T1] Distance to the base is: 122.6303440231547
+[T1] distance to the flag is: 80.47142593052442
+[T1] My position is X: 145.1045906679572 Y: 0 Z: 233.46744911984712
+[T1] Distance to the base is: 123.62634474176409
+[T1] distance to the flag is: 79.4614259028082
+[T1] My position is X: 146.11931083375998 Y: 0 Z: 233.3456826999508
+[T1] Distance to the base is: 124.634408492958
+[T1] distance to the flag is: 78.43942586567455
+[T1] My position is X: 147.15984578310116 Y: 0 Z: 233.22081850603
+[T1] Distance to the base is: 125.66835147927398
+[T1] distance to the flag is: 77.3914258429055
+[T1] My position is X: 148.1884662232225 Y: 0 Z: 233.09738405321554
+[T1] Distance to the base is: 126.69068248768558
+[T1] distance to the flag is: 76.35542580720232
+[T1] My position is X: 149.2349584308723 Y: 0 Z: 232.9718049882977
+[T1] Distance to the base is: 127.7310020325589
+[T1] distance to the flag is: 75.30142578717508
+[T1] My position is X: 150.27350762251226 Y: 0 Z: 232.84717908530106
+[T1] Distance to the base is: 128.76364539671175
+[T1] distance to the flag is: 74.25542576845915
+[T1] My position is X: 151.310071071246 Y: 0 Z: 232.72279147145315
+[T1] Distance to the base is: 129.79452760236362
+[T1] distance to the flag is: 73.21142573889517
+[T1] My position is X: 152.37046356800928 Y: 0 Z: 232.59554437184167
+[T1] Distance to the base is: 130.84932349041716
+[T1] distance to the flag is: 72.14342570539733
+[T1] My position is X: 153.43085605737508 Y: 0 Z: 232.4682972731179
+[T1] Distance to the base is: 131.90433187155088
+[T1] distance to the flag is: 71.07542567935003
+[T1] My position is X: 154.42969019115822 Y: 0 Z: 232.34843717706403
+[T1] Distance to the base is: 132.89828427286076
+[T1] distance to the flag is: 70.06942564483893
+[T1] My position is X: 155.46228213928447 Y: 0 Z: 232.22452614328895
+[T1] Distance to the base is: 133.92601863360838
+[T1] distance to the flag is: 69.0294256084801
+[T1] My position is X: 156.47104505417616 Y: 0 Z: 232.103474593502
+[T1] Distance to the base is: 134.93021756793817
+[T1] distance to the flag is: 68.01342556115402
+[T1] My position is X: 157.5016512519987 Y: 0 Z: 231.97980184976336
+[T1] Distance to the base is: 135.95634205048864
+[T1] distance to the flag is: 66.97542552139771
