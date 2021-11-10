@@ -155,7 +155,7 @@ if (Length > 0) {
 +!perform_look_action 
     <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR PERFORM_LOOK_ACTION GOES HERE.") } 
 
-    /*
+    
     ?my_position(X,Y,Z);
 
     .println("My position is X: ", X, " Y: ", Y, " Z: ", Z);
@@ -175,7 +175,7 @@ if (Length > 0) {
     }
     .println("distance to the flag is: ", D2);
 
-    */
+    
     .
 
 

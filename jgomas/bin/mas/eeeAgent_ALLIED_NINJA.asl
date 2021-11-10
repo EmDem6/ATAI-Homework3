@@ -72,36 +72,173 @@ if (Length > 0) {
             
             if (Team == 200) {  // Only if I'm ALLIED
 
-                .println("HEMOS VISTO UN ENEMIGO uuh que miedo ");
+                //.println("HEMOS VISTO UN ENEMIGO uuh que miedo ");
 
                 ?debug(Mode); if (Mode<=2) { .println("Aiming an enemy. . .", MyTeam, " ", .number(MyTeam) , " ", Team, " ", .number(Team)); }
                 
                 //+aimed_agent(Object);
                 //-+aimed("true");
-                .nth(6, Object, XPOSITION);
+                /*.nth(6, Object, pos(XX,_,ZZ));
 
-                .println("X: ", XPOSITION);
+                .println("X: ", XX , "  ",ZZ);
 
-                .nth(1, XPOSITION, XX);
-                .nth(3, XPOSITION, ZZ);
-
-                .println("X: ", XX);
-                ?my_position(X,Y,Z);
+                ?my_position(MX,MY,MZ);
                 
-                VectorX = -(XX - X);
-                VectorZ = -(ZZ - Z);
+                .println("X: ", XX , "  ",ZZ);
+                
+                X1 = (MX + 1);
+                X2 = (MX - 1);
 
-                VectorX = VectorX / (math.sqrt(VectorX * VectorX + VectorZ * VectorZ));
-                VectorZ = VectorZ / (math.sqrt(VectorX * VectorX + VectorZ * VectorZ));
+                Z1 = (MZ + 1);
+                Z2 = (MZ - 1);
 
-                NewX = VectorX * 2 + X;
-                NewZ = VectorZ * 2 + Z;
+                .println("X: ", XX , "  ",ZZ);
 
-                .println("Estoy en la posicion " , X , "  " , Y , " Y me muevo a la posicion " , NewX, "  " , NewZ);
+                !distance( pos( MX, MY, Z1 ), pos( XX, MY, ZZ ) );
+                ?distance(D1);
+
+                !distance( pos( X1, MY, MZ ), pos( XX, MY, ZZ ) );
+                ?distance(D2);
+
+                !distance( pos( MX, MY, Z2 ), pos( XX, MY, ZZ ) );
+                ?distance(D3);
+
+                !distance( pos( X2, MY, MZ ), pos( XX, MY, ZZ ) );
+                ?distance(D4);
+
+                .println("X: ", XX , "  ",ZZ);
+
+                .println("X: ", MX , "  ",MZ);
+
+                .println("X1: ", X1 , "  ",X2);
+                .println("Z1: ", Z1 , "  ",Z2);
+
+                .println("D1: ", D1 , "  ",D2 , D3,D4);
+
+                Max = D1;
+                .println("Max: ", Max);
+                
+                if (D2 > Max) {
+                
+                    .println("Max2: ", Max);
+                    Max = D2;
+
+                }
+
+                if (D3 > Max) {
+                
+                    Max = D3;
+                }
+
+                if (D4 > Max) {
+                
+                    Max = D4;
+                }
+                
+                .println("Max: ", Max);
+                if (Max == D1) {
+                
+                    NewX = MX;
+                    NewZ = Z1;
+                }
+
+                if (Max == D2) {
+                
+                    NewX = X1;
+                    NewZ = MZ;
+                }
+                
+                if (Max == D3) {
+                
+                    NewX = MX;
+                    NewZ = Z2;
+                }
+
+                if (Max == D1) {
+                
+                    NewX = X2;
+                    NewZ = MZ;
+                }
+                .println("Max: ", Max);
+                /*
+                .println("X: ", XX);
+                
+                VectorX = -(XX - MX);
+                VectorZ = -(ZZ - MZ);
+                .println("X: ", XX);
+
+                
+                //VectorX = VectorX / (math.sqrt(VectorX * VectorX + VectorZ * VectorZ));
+                //VectorZ = VectorZ / (math.sqrt(VectorX * VectorX + VectorZ * VectorZ));
+                .println("X: ", XX);
+                NewX = VectorX * 2 + MX;
+                NewZ = VectorZ * 2 + MZ;
+                .println("X: ", XX);
+                .println("Estoy en la posicion " , MX , "  " , MZ , " Y me muevo a la posicion " , NewX, "  " , NewZ);
+                .println("X: ", XX);
+                */
+                .nth(6, Object, pos(XX,_,ZZ));
+                
+                ?my_position(MIX,MIY,MIZ);
+                
+                VectorX = MIX - XX;
+                VectorZ = MIZ - ZZ;
+
+                //.println("VectorX =", VectorX, ", VectorZ = ", VectorZ, "Bien Bien");
+                //ModuloS = VectorX * VectorX + VectorZ * VectorZ;
+                //.println("Hemos calculado el modulo bro");
+                //VectorX = VectorX / (math.sqrt(ModuloS));
+                // .println("HOLIIII BRO, CALCULANDO VECTOR X");
+                //VectorZ = VectorZ / (math.sqrt(VectorX * VectorX + VectorZ * VectorZ));
+
+
+                !distance(pos(VectorX,0,VectorZ), pos(0,0,0));
+
+                ?distance(MODULO);
+
+                VectorUX = VectorX / MODULO;
+                VectorUZ = VectorZ / MODULO;
+
+                +newPos(0,0);
+                +position(invalid);
+                +contador(2);
+                while (position(invalid)) {
+                    -position(invalid);
+                    ?contador(Mult);
+                    NewX = VectorUX * Mult + MIX;
+                    NewZ = VectorUZ * Mult + MIZ;
+
+                    if (NewX < 0) {
+                        NewX = 1;
+                    }
+
+                    if (NewZ > 255) {
+                        NewZ = 254;
+                    }
+
+                    if (NewX > 255) {
+                        NewX = 254;
+                    }
+
+                    if (NewZ < 0) {
+                        NewZ = 1;
+                    }
+
+                    check_position(pos(NewX, 0, NewZ));
+                    
+
+                    -+newPos(NewX, NewZ);
+                    -+contador(Mult + 1);
+                }
+                ?newPos(NewX,NewZ);
+
+                
+
+                //.println("Estoy en la posicion " , MIX , "  " , MIZ , " Y me muevo a la posicion " , NewX, "  " , NewZ);
 
                 .my_name(MyName);
                 ?current_task(task(C_priority, _, _, _, _));
-                !add_task(task(C_priority + 1,"TASK_GOTO_POSITION", MyName, pos(NewX, Y, NewZ), ""));
+                !add_task(task("TASK_GOTO_POSITION", MyName, pos(NewX, 0, NewZ), ""));
                 -+state(standing);
                 -goto(_,_,_)
                 
@@ -215,7 +352,7 @@ if (Length > 0) {
         +task_priority("TASK_GET_OBJECTIVE",1000);
         +task_priority("TASK_ATTACK", 1000);
         +task_priority("TASK_RUN_AWAY", 1500);
-        +task_priority("TASK_GOTO_POSITION", 750);
+        +task_priority("TASK_GOTO_POSITION", 3000);
         +task_priority("TASK_PATROLLING", 500);
         +task_priority("TASK_WALKING_PATH", 1750).   
 

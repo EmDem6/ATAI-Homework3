@@ -46,7 +46,7 @@ patrollingRadius(64).
         .length(FOVObjects, Length);
         
         ?debug(Mode); if (Mode<=1) { .println("El numero de objetos es:", Length); }
-        .println("El numero de objetos es:", Length);
+        //.println("El numero de objetos es:", Length);
         
         if (Length > 0) {
 		    +bucle(0);
@@ -224,12 +224,12 @@ patrollingRadius(64).
 +!update_targets 
 	<-	?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR UPDATE_TARGETS GOES HERE.") }
 
-
+    .my_name(MyName);
     if((aimed(Ag)) & (Ag=="true")){
         //.println("HEEEY SII , ESTAMOS EN EL IF");
     } else {
         //.println("OH MIERDA ESTAMOS EN EL ELSE");
-        .my_name(MyName);
+        
         +newPos(0,0);
         +position(invalid);
         while (position(invalid)) {
@@ -244,7 +244,7 @@ patrollingRadius(64).
         ?newPos(NewObjectiveX,NewObjectiveZ);
 
         .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
-        !add_task(task("TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
+        !add_task(task("TASK_GOTO_POSITION", MyName, pos(130, 0, 10), ""));
     }
     
 
