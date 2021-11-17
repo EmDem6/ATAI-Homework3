@@ -242,9 +242,18 @@ patrollingRadius(64).
             -+newPos(NewObjectiveX, NewObjectiveZ);
         }
         ?newPos(NewObjectiveX,NewObjectiveZ);
+        ?aleatorio(Aleatorio);
 
-        .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
-        !add_task(task("TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveX), ""));
+        if (Aleatorio == 0) {
+            .println("New random position is X", 110, " Z ", 10);
+            !add_task(task(2000,"TASK_GOTO_POSITION", MyName, pos(110, 0, 10), ""));
+            -+aleatorio(1);
+        } else {
+            .println("New random position is X", NewObjectiveX, " Z ", NewObjectiveZ);
+            !add_task(task(2000,"TASK_GOTO_POSITION", MyName, pos(NewObjectiveX, 0, NewObjectiveZ), ""));
+        }
+
+        
     }
     
 
@@ -381,6 +390,8 @@ patrollingRadius(64).
 
 +!init
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}
+
+   +aleatorio(0);
     .my_name(MyName);
     +newPos(0,0);
     +position(invalid);

@@ -49,7 +49,8 @@ patrollingRadius(64).
         
         if (Length > 0) {
 		    +bucle(0);
-    
+            +cuantosA(0);
+            +cuantosT(0);
             -+aimed("false");
     
             while (aimed("false") & bucle(X) & (X < Length)) {
@@ -69,12 +70,30 @@ patrollingRadius(64).
                     // Object may be an enemy
                     .nth(1, Object, Team);
                     ?my_formattedTeam(MyTeam);
+                    /*
+                    if (Team == 100 & (Length > 1)) { //If i see someone from allies
+				
+ 					    ?cuantosT(T);
+                        -+cuantosT(T + 1);
+                        -+aimed("true");
+
+                    }*/
           
-                    if (Team == 100) {  // Only if I'm AXIS
+                    if (Team == 200) {  // Only if I'm AXIS
+
+                        ?cuantosA(A);
+                        -+cuantosA(A + 1);
 				
  					    ?debug(Mode); if (Mode<=2) { .println("Aiming an enemy. . .", MyTeam, " ", .number(MyTeam) , " ", Team, " ", .number(Team)); }
 					    +aimed_agent(Object);
-                        -+aimed("true");
+                        //-+aimed("true");
+                        
+                        if (loyal("false")) {
+                            .println("Aiming an enemy");
+                            -+aimed("true");
+                        }
+
+
 
                     }
                     
@@ -83,6 +102,23 @@ patrollingRadius(64).
                 -+bucle(X+1);
                 
             }
+
+            
+            /*
+            ?cuantosA(A);
+            ?cuantosT(T);
+
+            if (A > 0 & T > 0) {
+                -+aimed("true");
+
+                .println("Aimead vale true");
+            } else {
+                -+aimed("false");
+
+                .println("Aimead vale false");
+            }
+            */
+
                      
        
         }
@@ -130,11 +166,11 @@ patrollingRadius(64).
         ?my_formattedTeam(MyTeam);
 
 
-        if (AimedAgentTeam == 100) {
+        if (AimedAgentTeam == 200) {
         
             .nth(6, AimedAgent, NewDestination);
             ?debug(Mode); if (Mode<=1) { .println("NUEVO DESTINO MARCADO: ", NewDestination); }
-            //update_destination(NewDestination);
+            update_destination(NewDestination);
         }
         .
     
@@ -307,6 +343,38 @@ patrollingRadius(64).
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR cfa_refuse GOES HERE.")};
       -cfa_refuse.  
 
+/////////////////////////////////
+//  ANSWER_ACTION_INT
+/////////////////////////////////
+
++goto(X,Y,Z)[source(A)]
+    <-
+        //.println("RECIDBIDO: ", X, " ", Y, " ", Z);
+        .my_name(MyName);
+        !distance(pos(X,Y,Z));
+        ?distance(D);
+        if (D>10) 
+        {
+            !add_task(task(1100,"TASK_GOTO_POSITION", MyName, pos(X, Y, Z), ""));
+	        -+state(standing);
+	        -goto(_,_,_)
+        }
+
+    .
+    
++goto2(X,Y,Z)[source(A)]
+    <-
+        //.println("RECIDBIDO: ", X, " ", Y, " ", Z);
+        .my_name(MyName);
+        !distance(pos(X,Y,Z));
+        ?distance(D);
+        if (D < 50) 
+        {
+            //.println("La distancia es ", D);
+            -+loyal("false");
+        }
+
+    .
 
 
 /////////////////////////////////
@@ -314,5 +382,9 @@ patrollingRadius(64).
 /////////////////////////////////
 
 +!init
-   <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}.  
+   <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}
+   
+   +loyal("true");
+   
+   .  
 

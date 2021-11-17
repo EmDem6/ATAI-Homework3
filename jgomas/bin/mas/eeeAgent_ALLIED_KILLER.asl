@@ -155,7 +155,7 @@ if (Length > 0) {
 +!perform_look_action 
     <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR PERFORM_LOOK_ACTION GOES HERE.") } 
 
-    
+    /*
     ?my_position(X,Y,Z);
 
     .println("My position is X: ", X, " Y: ", Y, " Z: ", Z);
@@ -174,7 +174,7 @@ if (Length > 0) {
         ?distance( D2 );
     }
     .println("distance to the flag is: ", D2);
-
+    */
     
     .
 
@@ -366,12 +366,12 @@ if (Length > 0) {
 
 +!init
    <- ?debug(Mode); if (Mode<=1) { .println("YOUR CODE FOR init GOES HERE.")}
-   
+   /*
     ?my_position(X,Y,Z);
     +base_position(X,Y,Z);
     ?objective(ObjectiveX, ObjectiveY, ObjectiveZ);
     +flag_position(ObjectiveX, ObjectiveY, ObjectiveZ); 
-   
+   */
    .  
 
 
